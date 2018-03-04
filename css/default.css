@@ -1,3 +1,39 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+
 .token.selector{color:black;}
 .token.property{color:black;}
 .token.function{color:black;}
+#code-wrapper{
+    padding: 16px;
+    display: flex;
+    
+}
+#code{
+    width: 100%;
+    overflow: auto;
+}
+#paperWrapper{
+    border:1px solid #aaa;
+    position: fixed;
+    width: 45vw;
+    height: 90vh;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-start;
+}
+#paperWrapper >.paper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: none;
+    white-space: pre-wrap;
+    padding-left: 16px; 
+}
+#paperWrapper>.html{ 
+    width: 100%;
+    height: 100%;
+
+    padding: 16px;
+    overflow: auto;
+}
